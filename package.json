@@ -1,0 +1,42 @@
+{
+  "name": "webpack4",
+  "version": "1.0.0",
+  "description": "probando webpack",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "prodW": "set NODE_ENV=production && npm run clean &&  webpack --mode production",
+    "prodU": "export NODE_ENV=production && npm run clean &&  webpack --mode production",
+    "dev": "webpack-dev-server --mode development"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "TH",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.1.0",
+    "node-sass": "^4.8.3",
+    "pug-html-loader": "^1.1.5",
+    "query-string": "^6.0.0",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.7",
+    "serviceworker-webpack-plugin": "^1.0.0-alpha02",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.2"
+  },
+  "dependencies": {
+    "fullpage.js": "^2.9.7",
+    "gsap": "^1.20.4",
+    "jquery": "^3.3.1"
+  }
+}
